@@ -1,0 +1,65 @@
+:host {
+    position: fixed;
+    inset: 0;
+    display: block;
+
+    .climacontainer {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background-image: url("https://picsum.photos/1920/1080?random=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 420px;
+        background: rgba(155, 183, 255, 0.25);
+        border: 3px solid rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        box-shadow: 0 8px 32px 0 rgba(117, 119, 148, 0.37);
+        padding: 32px;
+        align-items: center;
+        backdrop-filter: blur(10px) saturate(2.5);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-8px);
+        }
+    }
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 4rem;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .btnprimary {
+        width: 50%;
+        padding: 12px 24px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        background-color: #ffffff;
+        color: #0a003c;
+        cursor: pointer;
+        transition: background-color, transform 0.15s ease-in-out;
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+            transform: translateY(2px);
+            background-color: #c6d4ff;
+        }
+    }
+
+}
